@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+<head>
+  <style>
+
+    div.fixed {
+      float: right;
+      color: black;
+      font: 50px
+    }
+
+div.fixed9 {
+  position:fixed;
+  top: 130px;
+  left: 700px;
+  width: 400px;
+}
+div.fixed8 {
+  position:fixed;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  top: 100px;
+  left: 250px;
+  width: 400px;
+  color: black;
+}
+
+    div.fixed4 {
+  position: fixed;
+  font-size: 40px;
+  font-family: cursive;
+  top: 20px;
+  left: 100px;
+  width: 400px;
+  color: black;
+
+} 
+  div {color:white}
+    body {
+    background-repeat:no-repeat;
+    background-color: white;
+    background-position: center top;
+    background-attachment: scroll;} 
+</style>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: grey;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.container {
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 1000px;
+  width: 1000px;
+  text-align: center;
+  font-size: 18px;
+}
+
+img { 
+  width: 500px;
+  height: 500px;
+  position:fixed;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="Deran Jewelers home.html">Home</a>
+    <a href="Services.html">Services</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+</div>
+
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+
+  <div class="fixed4">Deran Jewelers</div>
+
+  <div class="fixed">
+    <a
+      href=https://www.google.com/maps/place/Deran+Jewelers/@41.4902781,-87.479431,17z/data=!3m1!4b1!4m5!3m4!1s0x8811e358f42cfa59:0x929c0cbec2207b70!8m2!3d41.4902781!4d-87.4772423</a><i
+        class="fa fa-map-marker" aria-hidden="false" style="font-size: 40px;color:black;"></i></a>
+    (219)218-3810 </div>
+  
+  
+    <div class="fixed8">
+    <h1>Quick Turn Over!</h1>
+   <p>- Custom Designs</p>
+   <p>- Custom Wedding Rings/Bands</p>
+   <p>- Gold plating</p>
+   <p>- Casting</p>
+   <p>- Stone setting</p>
+   <p>- Ring Resizing</p>
+   <p>- Jewelery repair</p>
+   <p>- Watch Battery</p>
+ </div>
+
+ <div class="fixed9">
+  <img src="WhatsApp Image 2020-07-16 at 11.55.17 AM (6).jpeg">
+  </div>
+
+  </div>
+    
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</body>
+</html> 
